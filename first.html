@@ -1,0 +1,46 @@
+<body>
+<svg width=1000px height=1000px >
+<path d="M10 10L30 10L30 40L30 40L10 40" 
+ fill ="red" stroke= "yellow"stroke-width="1"/>
+<!-- <path d="M60 10L70 20L80 50L80 60L60 30"/> -->  
+<path
+    d="M10 10L100 100L600 100"
+    fill="none"
+    stroke="black"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-dasharray="20 15 30 15"
+    stroke-dashoffset="0"
+>
+<animate attributeName="stroke-dashoffset"
+         from="0" to="100" dur="1s"
+         repeatCount ="indefinite"/>
+         </path>
+	<circle 
+	cx="150" 
+	cy="75" 
+	r="20" 
+	fill="rgb(150,235,21)" 
+	stroke = "red"
+	stroke-width ="10"
+	>
+	<animate  
+	attributeName="cx" 
+	from="100" 
+	to="600" 
+	dur="2s"
+	repeatCount="indefinite"/>
+    </circle> 
+
+</svg>
+</body>
+<script type="text/javascript" src="https://zbryikt.github.io/d3js-course/dist/d3.v4.min.js"></script>
+<script type="text/javascript">
+ d3.select("path")
+  .transition().duration(4000)
+  .attr("d","M60 10L70 20L80 50L80 60L60 30")
+  .attr("fill","blue")
+  .attr("stroke","red")
+  .attr("stroke-width","6");
+</script>
+      
