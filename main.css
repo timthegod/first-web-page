@@ -9,7 +9,9 @@ uiload {
     0% {background: #f00;}
     100% {background: #0f0;}
    }
-
+div{
+  font-family: cwTeXYen;
+}
 #focus #subf {
   display:none;
   position:absolute; 
